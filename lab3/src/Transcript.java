@@ -57,11 +57,11 @@ public class Transcript {
 		Transcript t = new Transcript(10);
 		t.setName("John Too");
 		
-		Course c = new Course("CPSC 121", 75);
+		Course c = new Course("CPSC 121", 75, 'w');
 		t.addCourse(c);
-		c = new Course("CPSC 210", 85);
+		c = new Course("CPSC 210", 85, 'q');
 		t.addCourse(c);
-		c = new Course("CPSC 213", 90);
+		c = new Course("CPSC 213", 90, 'e');
 		t.addCourse(c);
 		
 		System.out.println(t.getName() + "'s marks are:");
