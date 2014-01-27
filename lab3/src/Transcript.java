@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Transcript {
 	
@@ -10,7 +12,6 @@ public class Transcript {
 	/**
 	 * Creates a Transcript with space for n courses, but 
 	 * containing no actual courses
-	 * @param n  the max number of courses in the transcript
 	 */
 	public Transcript(int n) {
 		courses = new Course[n];
@@ -37,6 +38,17 @@ public class Transcript {
 		}
 	}
 	
+	private int useless(){
+		int i;
+		for (i = 0; i < 10; i++) {
+			System.out.println(i);
+		}
+		@SuppressWarnings("rawtypes")
+		ArrayList t;
+		
+		return i;
+	}
+	
 	/**
 	 * @return the average over all the marks of this transcript
 	 */
@@ -52,11 +64,11 @@ public class Transcript {
 		Transcript t = new Transcript(10);
 		t.setName("John Too");
 		
-		Course c = new Course("CPSC 121", 75);
+		Course c = new Course("CPSC 121", 75, 'c');
 		t.addCourse(c);
-		c = new Course("CPSC 210", 85);
+		c = new Course("CPSC 210", 85, 'l');
 		t.addCourse(c);
-		c = new Course("CPSC 213", 90);
+		c = new Course("CPSC 213", 90, 'c');
 		t.addCourse(c);
 		
 		System.out.println(t.getName() + "'s marks are:");
