@@ -37,6 +37,11 @@ public class Transcript {
 		}
 	}
 	
+	private int useless(){
+		int i = 0;
+		return i;
+	}
+	
 	/**
 	 * @return the average over all the marks of this transcript
 	 */
