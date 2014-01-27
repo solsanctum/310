@@ -4,9 +4,9 @@ public class Course {
 	public int mark;
 	public char type;
 	
-	public Course(String n, int m, char d){
+	public Course(String n, int m, char t){
 		name = n;
 		mark = m;
-		type = d;
+		type = t;
 	}
 }
