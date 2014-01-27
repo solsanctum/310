@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 
 public class Transcript {
 	
@@ -23,7 +25,7 @@ public class Transcript {
 	}
 	
 	public String getName() {
-		return studentName;
+		return studentName + " new";
 	}
 	
 	public int getNoCourses() {
@@ -38,7 +40,10 @@ public class Transcript {
 	}
 	
 	private int useless(){
-		int i = 0;
+		int i;
+		for (i=0;i<10;i++) {
+			LinkedList l;
+		}
 		return i;
 	}
 	
@@ -55,13 +60,13 @@ public class Transcript {
 	
 	public static void main(String[] args) {
 		Transcript t = new Transcript(10);
-		t.setName("John Too");
+		t.setName("John Two");
 		
-		Course c = new Course("CPSC 121", 75);
+		Course c = new Course("CPSC 121", 75, 'c');
 		t.addCourse(c);
-		c = new Course("CPSC 210", 85);
+		c = new Course("CPSC 210", 85, 'l');
 		t.addCourse(c);
-		c = new Course("CPSC 213", 90);
+		c = new Course("CPSC 213", 90, 'c');
 		t.addCourse(c);
 		
 		System.out.println(t.getName() + "'s marks are:");
